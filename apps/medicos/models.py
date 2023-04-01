@@ -1,8 +1,7 @@
 from django.db import models
 
+
 # criar model
-
-
 class Medico(models.Model):
     # nome
     nome = models.CharField(max_length=30, help_text="Nome do medico")
@@ -19,4 +18,4 @@ class Medico(models.Model):
 
     # retornar o nome e sobrenome
     def __str__(self):
-        return f"{self.nome} {self.sobrenome}"
+        return self.nome
