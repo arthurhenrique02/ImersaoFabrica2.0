@@ -52,3 +52,6 @@
 
 ### Sobre a home
 #### Foi utilizado Boostrap apenas para fazer uma barra de navegação, que, ao clicar no elementos, redireciona para a url correspondente
+
+
+###### OBS: projetos dos dias anterioes ao final estão na branch develop
