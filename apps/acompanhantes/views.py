@@ -11,9 +11,8 @@ from apps.acompanhantes.api.serializer import AcompanhanteSerializer
 # criar viewsets
 class AcompanhanteViewSet(
     GenericViewSet,  # viewset
-    # create (post) read (verifica 1 dado, por exemplo, medico do id 1)
-    CreateModelMixin,
-    RetrieveModelMixin,
+    CreateModelMixin,  # create (post)
+    RetrieveModelMixin,  # read (verifica 1 dado, por exemplo, medico do id 1)
     UpdateModelMixin,  # update (put e patch)
     ListModelMixin,  # read (get)
     DestroyModelMixin  # delete
