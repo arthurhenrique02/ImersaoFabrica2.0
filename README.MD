@@ -17,9 +17,9 @@
 
 ### Como Utilizar
 
-#####   Primeiro passo: 
+####   Primeiro passo: 
 #####     Criar um ambiente virtual. Comando: pyhon -m venv venv
-#####   Segundo passo:
+####  Segundo passo:
 #####     Ativar o ambiente virutal. Comandos: (windows) venv\Scripts\activate (linux/mac) source bin/activate
 ####    Terceiro passo:
 #####      Instalar requirements.txt. Comando: pip install -r .\requirements.txt
