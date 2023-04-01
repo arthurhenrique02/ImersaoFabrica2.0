@@ -13,7 +13,9 @@ class Paciente(models.Model):
 
     # sobrenome
     sobrenome = models.CharField(
-        max_length=200, help_text="Sobrenomes do funcionario")
+        max_length=200,
+        help_text="Sobrenomes do funcionario"
+    )
 
     # idade
     idade = models.IntegerField(
@@ -55,10 +57,16 @@ class Paciente(models.Model):
     )
 
     # data e hora de entrada
-    data_hora_entrada = models.DateTimeField()
+    data_hora_entrada = models.DateTimeField(
+        help_text="Data e hora de entrada"
+    )
 
     # date e hora de saida
-    data_hora_saida = models.DateTimeField()
+    data_hora_saida = models.DateTimeField(
+        help_text="Data e hora de saida",
+        null=True,
+        blank=True
+    )
 
     # retornar o nome e sobrenome
     def __str__(self):
