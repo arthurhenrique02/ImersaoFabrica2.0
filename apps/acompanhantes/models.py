@@ -1,5 +1,7 @@
 from django.db import models
 
+from apps.pacientes.models import Paciente
+
 
 # Criar model
 class Acompanhante(models.Model):
@@ -9,6 +11,12 @@ class Acompanhante(models.Model):
     # sobrenome
     sobrenome = models.CharField(
         max_length=200, help_text="Sobrenome do acompanhante")
+
+    # paciente
+    paciente_acompanhado = models.ForeignKey(
+        Paciente,
+        on_delete=models.CASCADE,
+    )
 
     # retornar o nome e sobrenome
     def __str__(self):

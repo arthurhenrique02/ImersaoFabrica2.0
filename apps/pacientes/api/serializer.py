@@ -11,8 +11,4 @@ class PacienteSerializer(serializers.ModelSerializer):
         model = Paciente
 
         # fields à serem serializados
-        fields = [
-            "nome", "sobrenome", "idade", "sexo", "alergias",
-            "tipo_sangue", "acompanhante", "data_hora_entrada",
-            "data_hora_saida"
-        ]
+        fields = ("__all__")

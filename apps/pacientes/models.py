@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 
 from apps.medicos.models import Medico
-from apps.acompanhantes.models import Acompanhante
 
 
 # criar model
@@ -37,15 +36,6 @@ class Paciente(models.Model):
         blank=True,
         null=True,
         help_text="Tipo sanguineo do paciente"
-    )
-
-    # acompanhante
-    # refenciar chave da do acompanhante, permite apenas uma empresa por acompanhante
-    acompanhante = models.ForeignKey(
-        Acompanhante,
-        on_delete=models.CASCADE,
-        null=True,
-        blank=True,
     )
 
     # medico responsavel

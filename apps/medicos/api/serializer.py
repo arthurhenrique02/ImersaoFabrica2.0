@@ -11,7 +11,4 @@ class MedicoSerializer(serializers.ModelSerializer):
         model = Medico
 
         # fields à serem serializados
-        fields = [
-            "nome", "sobrenome", "area_atuacao", "crm"
-
-        ]
+        fields = ("__all__")

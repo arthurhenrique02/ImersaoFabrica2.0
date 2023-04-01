@@ -11,7 +11,4 @@ class AcompanhanteSerializer(serializers.ModelSerializer):
         model = Acompanhante
 
         # fields à serem serializados
-        fields = [
-            "nome", "sobrenome",
-
-        ]
+        fields = ("__all__")

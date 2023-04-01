@@ -1,4 +1,4 @@
-from django.urls import path, include
+from django.urls import path, include, re_path
 
 from rest_framework import routers
 
@@ -11,5 +11,5 @@ router.register("", MedicoViewSet, basename="listMedicos")
 
 urlpatterns = [
     # adicionar endpoints da api ao path
-    path("", include(router.urls)),
+    re_path("", include(router.urls)),
 ]
