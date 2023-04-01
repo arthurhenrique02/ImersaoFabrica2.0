@@ -38,7 +38,7 @@
 
 ### Sobre a API
 #### Nas URLS pode-se fazer o get, post, o put/patch e delete.
-#### Para o put/patch, ou delete, ou para selecionar apenas um dado JSON, é necessário apenas o id do dado que deseja fazer a operação (por exemplo: pacientes/1/)
+#### Para o put/patch, ou delete, ou para selecionar apenas um dado JSON, é necessário apenas o id do dado que deseja fazer a operação (por exemplo: pacientes/1/ (é necessário a / ao final))
 #### Para forms, é necessário adicionar o metodo que deseja.
 #### Há uma paginação para cada app que retorna apenas 3 dados JSON por pagina, caso queria acessar mais arquivos em uma página, basta adicionar "?limit=(quantidade que deseja)", sem as aspas.
 #### A conexão feita com o DB é do próprio django, campos que não relacionados (exceto o paciente_acompanhado, do app acompanhantes) podem ser nulos, inicialmente, dando a entender que quando o Paciente for atendido, a API deve ser atualizada.
@@ -47,7 +47,7 @@
 ###### { "nome": "", "sobrenome": "", "paciente_acompanhado": null }
 * ##### Pacientes:
 ###### {"nome": "", "sobrenome": "", "idade": null, "sexo": "", "alergias": "", "tipo_sangue": "", "data_hora_entrada": null, "data_hora_saida": null, "medico": null}
- * ##### Médicos:
+* ##### Médicos:
  ###### {"nome": "", "sobrenome": "", "crm": "", "area_atuacao": ""}
 
 ### Sobre a home
