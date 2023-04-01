@@ -2,6 +2,7 @@ from rest_framework.mixins import (
     CreateModelMixin, ListModelMixin, RetrieveModelMixin, UpdateModelMixin, DestroyModelMixin
 )
 from rest_framework.viewsets import GenericViewSet
+from rest_framework.pagination import LimitOffsetPagination
 
 from .models import Acompanhante
 from apps.acompanhantes.api.serializer import AcompanhanteSerializer
@@ -17,8 +18,12 @@ class AcompanhanteViewSet(
     ListModelMixin,  # read (get)
     DestroyModelMixin  # delete
 ):
+
     # definir serializer
     serializer_class = AcompanhanteSerializer
+
+    # definir paginação
+    pagination_class = LimitOffsetPagination  # adicionar ?limit=(num) a url
 
     # pegar dados da url
     def get_queryset(self):

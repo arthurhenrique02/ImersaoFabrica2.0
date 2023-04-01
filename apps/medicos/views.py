@@ -2,6 +2,7 @@ from rest_framework.mixins import (
     CreateModelMixin, ListModelMixin, RetrieveModelMixin, UpdateModelMixin, DestroyModelMixin
 )
 from rest_framework.viewsets import GenericViewSet
+from rest_framework.pagination import LimitOffsetPagination
 
 from .models import Medico
 from apps.medicos.api.serializer import MedicoSerializer
@@ -17,10 +18,15 @@ class MedicoViewSet(
     ListModelMixin,  # read (get)
     DestroyModelMixin  # delete
 ):
+
     # definir serializer
     serializer_class = MedicoSerializer
 
+    # definir paginação
+    pagination_class = LimitOffsetPagination  # adicionar ?limit=(num) a url
+
     # pegar dados da url
+
     def get_queryset(self):
         # query set padrao = pegar todos os objetos
         queryset = Medico.objects.all()

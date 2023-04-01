@@ -2,7 +2,7 @@ from rest_framework.mixins import (
     CreateModelMixin, ListModelMixin, RetrieveModelMixin, UpdateModelMixin, DestroyModelMixin
 )
 from rest_framework.viewsets import GenericViewSet
-from rest_framework import generics
+from rest_framework.pagination import LimitOffsetPagination
 
 from .models import Paciente
 from apps.pacientes.api.serializer import PacienteSerializer
@@ -19,6 +19,9 @@ class PacienteViewSet(
 ):
     # definir serializer
     serializer_class = PacienteSerializer
+
+    # definir paginação
+    pagination_class = LimitOffsetPagination  # adicionar ?limit=(num) a url
 
     # pegar dados da url
     def get_queryset(self):
