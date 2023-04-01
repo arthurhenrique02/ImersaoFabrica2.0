@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+{% block title %}
+    Prontuário
+{% endblock %}
+
+{% block header %}
+<!--navbar por bootstrap-->
+<nav class="navbar bg-light navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="/">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <!--links-->
+            <!--Pacientes-->
+            <li class="nav-item">
+                <a class="nav-link" href="/pacientes">Pacientes</a>
+              </li>
+              <!--Medicos-->
+              <li class="nav-item">
+                <a class="nav-link" href="/medicos">Medicos</a>
+              </li>
+              <!--admin-->
+              <li class="nav-item">
+                <a class="nav-link" href="/admin">admin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
+              </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+{% endblock %}

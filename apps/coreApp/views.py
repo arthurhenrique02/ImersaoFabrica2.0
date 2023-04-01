@@ -6,4 +6,4 @@ from django.contrib.auth.decorators import login_required
 # criar rota home
 @login_required(login_url="accounts/login")
 def home(request):
-    return HttpResponse("ola")
+    return render(request, "index.html")
