@@ -32,9 +32,9 @@
 
 ### Como acessar a API?
 #### As APIs estão nas url: 
-######  /acompanhantes
-######  /medicos
-######  /pacientes
+* ######  /acompanhantes
+* ######  /medicos
+* ######  /pacientes
 
 ### Sobre a API
 #### Nas URLS pode-se fazer o get, post, o put/patch e delete.
