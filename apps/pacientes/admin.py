@@ -9,8 +9,7 @@ class PacienteAdmin(admin.ModelAdmin):
 
     fields = [
         "nome", "sobrenome", "idade", "sexo",
-        "alergias", "tipo_sangue", "acompanhante",
-        "medico"
+        "alergias", "tipo_sangue", "medico"
     ]
 
 

@@ -7,7 +7,7 @@ from .models import Acompanhante
 class AcompanhanteAdmin(admin.ModelAdmin):
     model = Acompanhante
 
-    fields = ["nome", "sobrenome",]
+    fields = ["nome", "sobrenome", "paciente_acompanhado"]
 
 
 # registrar model Acompanhante e AcompanhanteAdmin
