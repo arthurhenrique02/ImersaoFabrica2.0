@@ -12,4 +12,6 @@ urlpatterns = [
     path("acompanhantes/", include("apps.acompanhantes.urls")),
     # adicionar rotar dos pacientes ao path
     path("pacientes/", include("apps.pacientes.urls")),
+
+    path("", include("apps.coreApp.urls")),
 ]
