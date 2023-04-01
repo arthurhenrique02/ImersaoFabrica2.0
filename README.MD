@@ -44,12 +44,11 @@
 #### A conexão feita com o DB é do próprio django, campos que não relacionados (exceto o paciente_acompanhado, do app acompanhantes) podem ser nulos, inicialmente, dando a entender que quando o Paciente for atendido, a API deve ser atualizada.
 #### Arquivos JSON para inserção de novos dados:
 * ##### Acompanhantes:
-###### {
-######    "nome": "",
-######  "sobrenome": "",
-######    "paciente_acompanhado": null
-###### }
-
+###### { "nome": "", "sobrenome": "", "paciente_acompanhado": null }
+* ##### Pacientes:
+###### {"nome": "", "sobrenome": "", "idade": null, "sexo": "", "alergias": "", "tipo_sangue": "", "data_hora_entrada": null, "data_hora_saida": null, "medico": null}
+ * ##### Médicos:
+ ###### {"nome": "", "sobrenome": "", "crm": "", "area_atuacao": ""}
 
 ### Sobre a home
 #### Foi utilizado Boostrap apenas para fazer uma barra de navegação, que, ao clicar no elementos, redireciona para a url correspondente
