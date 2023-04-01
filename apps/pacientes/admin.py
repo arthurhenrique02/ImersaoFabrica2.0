@@ -1,3 +1,18 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Paciente
+
+
+# criar model para admin
+class PacienteAdmin(admin.ModelAdmin):
+    model = Paciente
+
+    fields = [
+        "nome", "sobrenome", "idade", "sexo",
+        "alergias", "tipo_sangue", "acompanhante",
+        "medico"
+    ]
+
+
+# registrar model Acompanhante e AcompanhanteAdmin
+admin.site.register(Paciente, PacienteAdmin)
