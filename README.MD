@@ -18,13 +18,13 @@
 ### Como Utilizar
 
 ####   Primeiro passo: 
-#####     Criar um ambiente virtual. Comando: pyhon -m venv venv
+##### *     Criar um ambiente virtual. Comando: pyhon -m venv venv
 ####  Segundo passo:
-#####     Ativar o ambiente virutal. Comandos: (windows) venv\Scripts\activate (linux/mac) source bin/activate
+##### *    Ativar o ambiente virutal. Comandos: (windows) venv\Scripts\activate (linux/mac) source bin/activate
 ####    Terceiro passo:
-#####      Instalar requirements.txt. Comando: pip install -r .\requirements.txt
+##### *     Instalar requirements.txt. Comando: pip install -r .\requirements.txt
 ####    Quarto passo:
-#####       Rodar o servidor. Comando: python manage.py runserver
+##### *      Rodar o servidor. Comando: python manage.py runserver
 
 #### Caso não funcione, criar um banco de dados no PgAdmin 4 (programa para banco de dados) chamado prontuarioDB (ou trocar para um DB de sua escolha)
 
