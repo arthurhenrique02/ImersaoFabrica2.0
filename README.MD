@@ -41,5 +41,15 @@
 #### Para o put/patch, o delete, ou para selecionar apenas um dado JSON, é necessário apenas o id do dado que deseja (por exemplo: pacientes/1/)
 #### Para forms, é necessário adicionar o metodo que deseja.
 #### Há uma paginação para cada que retorna apenas 3 dados JSON por pagina, caso queria acessar mais arquivos em uma página, basta adicionar "?limit=(quantidade que deseja)", sem as aspas.
-#### A conxão feita com o DB é do próprio django, campos que são relacionados (exceto o paciente_acompanhado, do app acompanhantes) podem ser nulos, inicialmente, dando a entender que quando o Paciente for atendido, a API deve ser atualizada.
+#### A conexão feita com o DB é do próprio django, campos que não relacionados (exceto o paciente_acompanhado, do app acompanhantes) podem ser nulos, inicialmente, dando a entender que quando o Paciente for atendido, a API deve ser atualizada.
+#### Arquivos JSON para inserção de novos dados:
+* ##### Acompanhantes:
+<space><space>*<space>{
+<space><space><space><space>*<space>    "nome": "",
+<space><space><space><space>*<space>   "sobrenome": "",
+<space><space><space><space>*<space>    "paciente_acompanhado": null
+<space><space>*<space>}
 
+
+### Sobre a home
+#### Foi utilizado Boostrap apenas para fazer uma barra de navegação, que, ao clicar no elementos, redireciona para a url correspondente
