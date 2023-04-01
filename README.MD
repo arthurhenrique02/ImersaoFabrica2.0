@@ -26,7 +26,7 @@
 ####    Quarto passo:
 #####       Rodar o servidor. Comando: python manage.py runserver
 
-### Caso não funcione, criar um banco de dado no PgAdmin 4 (programa para banco de dados) chamado prontuarioDB (ou trocar para um DB de sua escolha)
+#### Caso não funcione, criar um banco de dados no PgAdmin 4 (programa para banco de dados) chamado prontuarioDB (ou trocar para um DB de sua escolha)
 
 ### Após instalação dos arquivos necessários
 #### Para entrar na url raiz do programa ("/") é necessário criar um usuário e senha. Crie-o com o comando python manage.py createsuperuser
