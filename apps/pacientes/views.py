@@ -1,7 +1,8 @@
 from rest_framework.mixins import (
-    CreateModelMixin, ListModelMixin, RetrieveModelMixin, UpdateModelMixin
+    CreateModelMixin, ListModelMixin, RetrieveModelMixin, UpdateModelMixin, DestroyModelMixin
 )
 from rest_framework.viewsets import GenericViewSet
+from rest_framework import generics
 
 from .models import Paciente
 from apps.pacientes.api.serializer import PacienteSerializer
@@ -9,11 +10,12 @@ from apps.pacientes.api.serializer import PacienteSerializer
 
 # criar viewsets
 class PacienteViewSet(
-    GenericViewSet,
-    CreateModelMixin,
-    RetrieveModelMixin,
-    UpdateModelMixin,
-    ListModelMixin
+    GenericViewSet,  # viewset
+    CreateModelMixin,  # create (post)
+    RetrieveModelMixin,  # read (verifica 1 dado, por exemplo, medico do id 1)
+    UpdateModelMixin,  # update (put e patch)
+    ListModelMixin,  # read (get)
+    DestroyModelMixin  # delete
 ):
     # definir serializer
     serializer_class = PacienteSerializer

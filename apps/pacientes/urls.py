@@ -7,8 +7,11 @@ from .views import PacienteViewSet
 # configurar endpoint da api paciente
 router = routers.DefaultRouter()
 # cadastrar rotas
-router.register("",
-                PacienteViewSet, basename="listPacientes")
+router.register(
+    "",
+    PacienteViewSet,
+    basename="listPacientes"
+)
 
 urlpatterns = [
     # adicionar endpoints da api ao path

@@ -1,5 +1,5 @@
 from rest_framework.mixins import (
-    CreateModelMixin, ListModelMixin, RetrieveModelMixin, UpdateModelMixin
+    CreateModelMixin, ListModelMixin, RetrieveModelMixin, UpdateModelMixin, DestroyModelMixin
 )
 from rest_framework.viewsets import GenericViewSet
 
@@ -14,7 +14,8 @@ class MedicoViewSet(
     CreateModelMixin,
     RetrieveModelMixin,
     UpdateModelMixin,  # update (put e patch)
-    ListModelMixin  # read (get)
+    ListModelMixin,  # read (get)
+    DestroyModelMixin  # delete
 ):
     # definir serializer
     serializer_class = MedicoSerializer
