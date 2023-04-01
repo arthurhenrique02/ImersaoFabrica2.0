@@ -44,11 +44,11 @@
 #### A conexão feita com o DB é do próprio django, campos que não relacionados (exceto o paciente_acompanhado, do app acompanhantes) podem ser nulos, inicialmente, dando a entender que quando o Paciente for atendido, a API deve ser atualizada.
 #### Arquivos JSON para inserção de novos dados:
 * ##### Acompanhantes:
-<space><space>*<space>{
-<space><space><space><space>*<space>    "nome": "",
-<space><space><space><space>*<space>   "sobrenome": "",
-<space><space><space><space>*<space>    "paciente_acompanhado": null
-<space><space>*<space>}
+###### {
+######    "nome": "",
+######  "sobrenome": "",
+######    "paciente_acompanhado": null
+###### }
 
 
 ### Sobre a home
